@@ -18,7 +18,7 @@ http://demo.example.invalid:8080/demo/demo/1008
 #EXTINF:-1 tvg-id="court-side" tvg-name="Court Side" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/court-side.png" group-title="Sports",Court Side
 http://demo.example.invalid:8080/demo/demo/1009
 #EXTINF:-1 tvg-id="open-movie-hd" tvg-name="Open Movie HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/open-movie-hd.png" group-title="Cinema",Open Movie HD
-https://test-streams.mux.dev/x36xhztz/x36xhztz.m3u8
+http://demo.example.invalid:8080/demo/demo/1010
 #EXTINF:-1 tvg-id="pixel-cinema-hd" tvg-name="Pixel Cinema HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/pixel-cinema-hd.png" group-title="Cinema",Pixel Cinema HD
 http://demo.example.invalid:8080/demo/demo/1011
 #EXTINF:-1 tvg-id="midnight-reel" tvg-name="Midnight Reel" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/midnight-reel.png" group-title="Cinema",Midnight Reel
