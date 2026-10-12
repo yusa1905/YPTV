@@ -4,6 +4,8 @@
 
 A small, fast IPTV player for Windows 11. Native WPF and LibVLC, no web view.
 
+![YPTV screenshot](docs/screenshot.png)
+
 ## Features
 - Opens M3U / M3U8 playlists from a file or URL, drag and drop, or the command line (`YPTV.exe list.m3u`)
 - Cached playlists: instant start, background refresh
