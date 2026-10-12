@@ -1,0 +1,33 @@
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Publish self-contained
+        run: dotnet publish src/Yptv -c Release -r win-x64 --self-contained -p:PublishSingleFile=true -p:DebugType=none -o publish/YPTV-win-x64
+      - name: Publish framework-dependent
+        run: dotnet publish src/Yptv -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true -p:DebugType=none -o publish/YPTV-win-x64-fdd
+      - name: Zip
+        run: |
+          Compress-Archive -Path publish/YPTV-win-x64/* -DestinationPath YPTV-win-x64.zip
+          Compress-Archive -Path publish/YPTV-win-x64-fdd/* -DestinationPath YPTV-win-x64-fdd.zip
+        shell: pwsh
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            YPTV-win-x64.zip
+            YPTV-win-x64-fdd.zip
+          generate_release_notes: true

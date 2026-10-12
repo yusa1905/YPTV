@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="Yptv.Deck"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource UiFont}" FontSize="12" Foreground="{DynamicResource Fg}">
+    <UserControl.Resources>
+        <Style x:Key="LcdNumber" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="{StaticResource NumFont}"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Typography.NumeralAlignment" Value="Tabular"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Margin="8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- LCD strip -->
+        <Border x:Name="Lcd" Height="40" Background="{DynamicResource LcdBg}" BorderBrush="{DynamicResource LcdEdge}"
+                BorderThickness="1" CornerRadius="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Margin="8,0,12,0" VerticalAlignment="Center">
+                    <TextBlock x:Name="Ghost" Text="888" Style="{StaticResource LcdNumber}" Foreground="{DynamicResource LcdGhost}"/>
+                    <TextBlock x:Name="Number" Style="{StaticResource LcdNumber}" Foreground="{DynamicResource LcdAcc}"/>
+                </Grid>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,8,0">
+                    <TextBlock x:Name="LcdName" Text="NO CHANNEL" FontFamily="{StaticResource NumFont}" FontSize="16"
+                               Foreground="{DynamicResource LcdAcc}" TextTrimming="CharacterEllipsis"/>
+                    <TextBlock x:Name="LcdMeta" FontFamily="{StaticResource NumFont}" FontStretch="SemiCondensed" FontSize="11"
+                               Foreground="{DynamicResource LcdAccLo}" TextTrimming="CharacterEllipsis"/>
+                    <!-- Movies and series: elapsed / total and a seek slider instead of the meta line -->
+                    <Grid x:Name="SeekRow" Height="14" Margin="0,2,0,0" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Slider x:Name="Seek" Style="{StaticResource VolumeSlider}" Maximum="1000" SmallChange="10" LargeChange="50"
+                                IsEnabled="False" ValueChanged="Seek_ValueChanged"/>
+                        <TextBlock x:Name="TimeText" Grid.Column="1" FontFamily="{StaticResource NumFont}" FontSize="11"
+                                   Foreground="{DynamicResource LcdAccLo}" VerticalAlignment="Center" Margin="8,0,0,0"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Transport -->
+        <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="12,0,0,0">
+            <Button x:Name="Prev" x:FieldModifier="public" Style="{StaticResource IconButton}" Content="&#xE892;"
+                    ToolTip="Previous channel (Up)" Margin="0,0,4,0"/>
+            <Button x:Name="PlayPause" x:FieldModifier="public" Style="{StaticResource IconButton}" Content="&#xE768;"
+                    ToolTip="Play / pause (Space)" Margin="0,0,4,0"/>
+            <Button x:Name="Stop" x:FieldModifier="public" Style="{StaticResource IconButton}" Content="&#xE71A;"
+                    ToolTip="Stop" Margin="0,0,4,0"/>
+            <Button x:Name="Next" x:FieldModifier="public" Style="{StaticResource IconButton}" Content="&#xE893;"
+                    ToolTip="Next channel (Down)"/>
+            <Rectangle Width="1" Height="20" Fill="{DynamicResource Div}" Margin="8,0"/>
+            <ToggleButton x:Name="Mute" x:FieldModifier="public" Style="{StaticResource IconToggle}" Content="&#xE767;"
+                          ToolTip="Mute (M)" Margin="0,0,8,0"/>
+            <Slider x:Name="Volume" x:FieldModifier="public" Style="{StaticResource VolumeSlider}" Width="96" Value="80"/>
+            <Rectangle Width="1" Height="20" Fill="{DynamicResource Div}" Margin="8,0"/>
+            <Button x:Name="OptionsButton" x:FieldModifier="public" Style="{StaticResource IconButton}" Content="&#xE713;"
+                    ToolTip="Playback options (B audio, V subtitles, A aspect, D deinterlace, mini mode)" Margin="0,0,4,0"/>
+            <ToggleButton x:Name="Pin" x:FieldModifier="public" Style="{StaticResource IconToggle}" Content="&#xE718;"
+                          ToolTip="Always on top (Ctrl+T)" Margin="0,0,4,0"/>
+            <Button x:Name="Fullscreen" x:FieldModifier="public" Style="{StaticResource IconButton}" Content="&#xE740;"
+                    ToolTip="Fullscreen (F11)"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

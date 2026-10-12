@@ -1,0 +1,40 @@
+<!-- Theme-independent tokens (DESIGN.md): fonts, the LCD well, the video overlay. Colors that change with the theme
+     live in ThemeDark/Light/Amoled.xaml. All brushes are frozen; no effects, gradients and borders only. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    mc:Ignorable="po">
+
+    <!-- Fonts: system only -->
+    <FontFamily x:Key="UiFont">Segoe UI Variable Text, Segoe UI</FontFamily>
+    <FontFamily x:Key="NumFont">Bahnschrift</FontFamily>
+    <FontFamily x:Key="IconFont">Segoe Fluent Icons, Segoe MDL2 Assets</FontFamily>
+
+    <!-- LCD well: dark teal in every theme, like a real display -->
+    <LinearGradientBrush x:Key="LcdBg" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#071211" Offset="0"/>
+        <GradientStop Color="#0B1918" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="LcdEdge" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#070A0B" Offset="0"/>
+        <GradientStop Color="#070A0B" Offset="0.65"/>
+        <GradientStop Color="#344042" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="LcdAcc" Color="#1FD1C1" po:Freeze="True"/>
+    <SolidColorBrush x:Key="LcdAccLo" Color="#138A80" po:Freeze="True"/>
+    <SolidColorBrush x:Key="LcdGhost" Color="#0F2B28" po:Freeze="True"/>
+
+    <!-- Over the video (always black): fixed light text -->
+    <SolidColorBrush x:Key="VFg" Color="#E3EAEA" po:Freeze="True"/>
+    <SolidColorBrush x:Key="VFg2" Color="#97A3A4" po:Freeze="True"/>
+    <SolidColorBrush x:Key="VErr" Color="#E05A4F" po:Freeze="True"/>
+    <!-- Overlay (VideoSurface window): near-invisible veil so the overlay window still receives the mouse -->
+    <SolidColorBrush x:Key="Veil" Color="#01000000" po:Freeze="True"/>
+    <!-- The video HWND paints system gray while nothing plays; an opaque black overlay hides it -->
+    <SolidColorBrush x:Key="VideoBlack" Color="#000000" po:Freeze="True"/>
+    <LinearGradientBrush x:Key="FsFade" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#00000000" Offset="0"/>
+        <GradientStop Color="#E0000000" Offset="1"/>
+    </LinearGradientBrush>
+</ResourceDictionary>

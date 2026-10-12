@@ -1,0 +1,47 @@
+<!-- Light theme tokens (DESIGN.md). Same keys in every Theme*.xaml; swapped at runtime. All brushes frozen. -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    mc:Ignorable="po">
+    <LinearGradientBrush x:Key="Bg2" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#FBFCFC" Offset="0"/>
+        <GradientStop Color="#E1E6E7" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Bg2H" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#FFFFFF" Offset="0"/>
+        <GradientStop Color="#EAEEEF" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Bg2P" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#E1E6E7" Offset="0"/>
+        <GradientStop Color="#FBFCFC" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="Bg0" Color="#E4E8E9" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Bg1" Color="#F3F5F5" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Well" Color="#FFFFFF" po:Freeze="True"/>
+    <LinearGradientBrush x:Key="WellEdge" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#768486" Offset="0"/>
+        <GradientStop Color="#768486" Offset="0.65"/>
+        <GradientStop Color="#FFFFFF" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="Line" Color="#768486" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Hi" Color="#FFFFFF" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Div" Color="#D2D9DA" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Fg" Color="#12191A" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Fg2" Color="#4A5658" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Fg3" Color="#556264" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Acc" Color="#09695F" po:Freeze="True"/>
+    <SolidColorBrush x:Key="AccHi" Color="#0E8F83" po:Freeze="True"/>
+    <SolidColorBrush x:Key="AccLo" Color="#0B7A70" po:Freeze="True"/>
+    <LinearGradientBrush x:Key="AccBar" StartPoint="0,0" EndPoint="0,1" po:Freeze="True">
+        <GradientStop Color="#0B7A70" Offset="0"/>
+        <GradientStop Color="#09695F" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="Sel" Color="#CDEAE6" po:Freeze="True"/>
+    <SolidColorBrush x:Key="SelDim" Color="#DCE2E3" po:Freeze="True"/>
+    <SolidColorBrush x:Key="RowHover" Color="#E7ECED" po:Freeze="True"/>
+    <SolidColorBrush x:Key="ThumbBrush" Color="#B9C3C5" po:Freeze="True"/>
+    <SolidColorBrush x:Key="ThumbHover" Color="#A3AEB0" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Warn" Color="#8A5A00" po:Freeze="True"/>
+    <SolidColorBrush x:Key="Err" Color="#B3261E" po:Freeze="True"/>
+</ResourceDictionary>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="Yptv.ExportDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Export" Width="420" SizeToContent="Height" ResizeMode="NoResize" ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner" Background="{DynamicResource Bg1}" Foreground="{DynamicResource Fg}"
+        FontFamily="{StaticResource UiFont}" FontSize="12" UseLayoutRounding="True" TextOptions.TextFormattingMode="Display">
+    <StackPanel Margin="16">
+        <TextBlock Text="What to export" Foreground="{DynamicResource Fg2}" FontSize="11" Margin="0,0,0,4"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="LiveRadio" Style="{StaticResource ScopeTab}" GroupName="scope" Content="Live" IsChecked="True"/>
+            <RadioButton x:Name="MoviesRadio" Grid.Column="1" Style="{StaticResource ScopeTab}" GroupName="scope" Content="Movies" Margin="-1,0,0,0"/>
+            <RadioButton x:Name="SeriesRadio" Grid.Column="2" Style="{StaticResource ScopeTab}" GroupName="scope" Content="Series" Margin="-1,0,0,0"/>
+            <RadioButton x:Name="AllRadio" Grid.Column="3" Style="{StaticResource ScopeTab}" GroupName="scope" Content="All" Margin="-1,0,0,0"/>
+        </Grid>
+        <CheckBox x:Name="HiddenCheck" Style="{StaticResource RowCheck}" Margin="-8,12,0,0" Content="Respect hidden groups"/>
+        <TextBlock Margin="0,12,0,0" TextWrapping="Wrap" FontSize="11" Foreground="{DynamicResource Fg2}"
+                   Text="The file contains your playlist login in every stream address. Keep it private. Only name, id, logo, group and address are written; other attributes of the original are dropped."/>
+        <TextBlock x:Name="Status" Margin="0,12,0,0" TextWrapping="Wrap" MinHeight="16" Foreground="{DynamicResource Fg2}"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button x:Name="ExportButton" Content="Export…" IsDefault="True" Margin="0,0,8,0" Click="Export_Click"/>
+            <Button Content="Close" IsCancel="True"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

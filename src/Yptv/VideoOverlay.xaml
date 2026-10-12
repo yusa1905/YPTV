@@ -1,0 +1,50 @@
+﻿<!-- Lives in VideoSurface.Content (own transparent window), so it can sit over the video without airspace clipping. -->
+<UserControl x:Class="Yptv.VideoOverlay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             FontFamily="{StaticResource UiFont}" FontSize="12" Foreground="{DynamicResource VFg}">
+    <Grid x:Name="Root" Background="{DynamicResource Veil}">
+        <StackPanel x:Name="Center" HorizontalAlignment="Center" VerticalAlignment="Center" MaxWidth="420">
+            <TextBlock x:Name="Glyph" Text="&#xE7BA;" FontFamily="{StaticResource IconFont}" FontSize="28"
+                       Foreground="{DynamicResource VErr}" HorizontalAlignment="Center" Margin="0,0,0,8" Visibility="Collapsed"/>
+            <TextBlock x:Name="Title" FontSize="16" FontWeight="SemiBold" TextAlignment="Center" TextWrapping="Wrap"/>
+            <TextBlock x:Name="Hint" Foreground="{DynamicResource VFg2}" TextAlignment="Center" TextWrapping="Wrap" Margin="0,4,0,0"/>
+            <StackPanel x:Name="Buttons" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,16,0,0">
+                <Button x:Name="OpenButton" x:FieldModifier="public" Style="{StaticResource BigButton}" Margin="0,0,8,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE8E5;" FontFamily="{StaticResource IconFont}" FontSize="16" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Open playlist" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="PasteButton" x:FieldModifier="public" Style="{StaticResource BigButton}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE77F;" FontFamily="{StaticResource IconFont}" FontSize="16" Margin="0,0,8,0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Paste URL" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <Button x:Name="RetryButton" x:FieldModifier="public" Content="Try again" HorizontalAlignment="Center"
+                    Margin="0,16,0,0" Visibility="Collapsed"/>
+        </StackPanel>
+
+        <!-- Zap OSD (fullscreen) and digit entry: LCD wells in the top corners -->
+        <Border x:Name="Osd" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16" Padding="12,4" Visibility="Collapsed"
+                Background="{DynamicResource LcdBg}" BorderBrush="{DynamicResource LcdEdge}" BorderThickness="1" CornerRadius="2">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="OsdNumber" FontFamily="{StaticResource NumFont}" FontSize="28" FontWeight="SemiBold"
+                           Foreground="{DynamicResource LcdAcc}" Margin="0,0,12,0" VerticalAlignment="Center"/>
+                <TextBlock x:Name="OsdName" FontFamily="{StaticResource NumFont}" FontSize="16" Foreground="{DynamicResource LcdAcc}"
+                           MaxWidth="480" TextTrimming="CharacterEllipsis" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        <Border x:Name="Digits" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="16" Padding="12,4" Visibility="Collapsed"
+                Background="{DynamicResource LcdBg}" BorderBrush="{DynamicResource LcdEdge}" BorderThickness="1" CornerRadius="2">
+            <TextBlock x:Name="DigitsText" FontFamily="{StaticResource NumFont}" FontSize="28" FontWeight="SemiBold"
+                       Foreground="{DynamicResource LcdAcc}"/>
+        </Border>
+
+        <!-- Fullscreen: MainWindow moves the deck in here -->
+        <Border x:Name="FsDeck" x:FieldModifier="public" VerticalAlignment="Bottom" Padding="0,40,0,0"
+                Background="{DynamicResource FsFade}" Visibility="Collapsed"/>
+    </Grid>
+</UserControl>
