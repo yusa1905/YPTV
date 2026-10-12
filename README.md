@@ -1,4 +1,6 @@
-<p align="center"><img src="docs/yptv-1024.png" width="128" alt="YPTV logo"></p># YPTV
+<p align="center"><img src="docs/yptv-1024.png" width="128" alt="YPTV logo"></p>
+
+# YPTV
 
 A small, fast IPTV player for Windows 11. Native WPF and LibVLC, no web view.
 
