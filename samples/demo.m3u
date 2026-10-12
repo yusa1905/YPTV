@@ -1,0 +1,101 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="aurora-news-24" tvg-name="Aurora News 24" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/aurora-news-24.png" group-title="News",Aurora News 24
+http://demo.example.invalid:8080/demo/demo/1001
+#EXTINF:-1 tvg-id="harbor-daily" tvg-name="Harbor Daily" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/harbor-daily.png" group-title="News",Harbor Daily
+http://demo.example.invalid:8080/demo/demo/1002
+#EXTINF:-1 tvg-id="metro-live-report" tvg-name="Metro Live Report" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/metro-live-report.png" group-title="News",Metro Live Report
+http://demo.example.invalid:8080/demo/demo/1003
+#EXTINF:-1 tvg-id="world-brief-hd" tvg-name="World Brief HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/world-brief-hd.png" group-title="News",World Brief HD
+http://demo.example.invalid:8080/demo/demo/1004
+#EXTINF:-1 tvg-id="pitch-one" tvg-name="Pitch One" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/pitch-one.png" group-title="Sports",Pitch One
+http://demo.example.invalid:8080/demo/demo/1005
+#EXTINF:-1 tvg-id="pitch-two" tvg-name="Pitch Two" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/pitch-two.png" group-title="Sports",Pitch Two
+http://demo.example.invalid:8080/demo/demo/1006
+#EXTINF:-1 tvg-id="summit-sports" tvg-name="Summit Sports" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/summit-sports.png" group-title="Sports",Summit Sports
+http://demo.example.invalid:8080/demo/demo/1007
+#EXTINF:-1 tvg-id="arena-replay-hd" tvg-name="Arena Replay HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/arena-replay-hd.png" group-title="Sports",Arena Replay HD
+http://demo.example.invalid:8080/demo/demo/1008
+#EXTINF:-1 tvg-id="court-side" tvg-name="Court Side" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/court-side.png" group-title="Sports",Court Side
+http://demo.example.invalid:8080/demo/demo/1009
+#EXTINF:-1 tvg-id="open-movie-hd" tvg-name="Open Movie HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/open-movie-hd.png" group-title="Cinema",Open Movie HD
+https://test-streams.mux.dev/x36xhztz/x36xhztz.m3u8
+#EXTINF:-1 tvg-id="pixel-cinema-hd" tvg-name="Pixel Cinema HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/pixel-cinema-hd.png" group-title="Cinema",Pixel Cinema HD
+http://demo.example.invalid:8080/demo/demo/1011
+#EXTINF:-1 tvg-id="midnight-reel" tvg-name="Midnight Reel" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/midnight-reel.png" group-title="Cinema",Midnight Reel
+http://demo.example.invalid:8080/demo/demo/1012
+#EXTINF:-1 tvg-id="classic-reel" tvg-name="Classic Reel" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/classic-reel.png" group-title="Cinema",Classic Reel
+http://demo.example.invalid:8080/demo/demo/1013
+#EXTINF:-1 tvg-id="little-comet-tv" tvg-name="Little Comet TV" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/little-comet-tv.png" group-title="Kids",Little Comet TV
+http://demo.example.invalid:8080/demo/demo/1014
+#EXTINF:-1 tvg-id="toy-box-kids" tvg-name="Toy Box Kids" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/toy-box-kids.png" group-title="Kids",Toy Box Kids
+http://demo.example.invalid:8080/demo/demo/1015
+#EXTINF:-1 tvg-id="pebble-play" tvg-name="Pebble Play" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/pebble-play.png" group-title="Kids",Pebble Play
+http://demo.example.invalid:8080/demo/demo/1016
+#EXTINF:-1 tvg-id="cartoon-cove" tvg-name="Cartoon Cove" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/cartoon-cove.png" group-title="Kids",Cartoon Cove
+http://demo.example.invalid:8080/demo/demo/1017
+#EXTINF:-1 tvg-id="vinyl-radio-tv" tvg-name="Vinyl Radio TV" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/vinyl-radio-tv.png" group-title="Music",Vinyl Radio TV
+http://demo.example.invalid:8080/demo/demo/1018
+#EXTINF:-1 tvg-id="neon-beats" tvg-name="Neon Beats" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/neon-beats.png" group-title="Music",Neon Beats
+http://demo.example.invalid:8080/demo/demo/1019
+#EXTINF:-1 tvg-id="acoustic-lounge" tvg-name="Acoustic Lounge" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/acoustic-lounge.png" group-title="Music",Acoustic Lounge
+http://demo.example.invalid:8080/demo/demo/1020
+#EXTINF:-1 tvg-id="synth-wave" tvg-name="Synth Wave" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/synth-wave.png" group-title="Music",Synth Wave
+http://demo.example.invalid:8080/demo/demo/1021
+#EXTINF:-1 tvg-id="wild-atlas" tvg-name="Wild Atlas" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/wild-atlas.png" group-title="Documentary",Wild Atlas
+http://demo.example.invalid:8080/demo/demo/1022
+#EXTINF:-1 tvg-id="deep-blue-docs" tvg-name="Deep Blue Docs" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/deep-blue-docs.png" group-title="Documentary",Deep Blue Docs
+http://demo.example.invalid:8080/demo/demo/1023
+#EXTINF:-1 tvg-id="craft-and-build" tvg-name="Craft and Build" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/craft-and-build.png" group-title="Documentary",Craft and Build
+http://demo.example.invalid:8080/demo/demo/1024
+#EXTINF:-1 tvg-id="space-frontier" tvg-name="Space Frontier" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/space-frontier.png" group-title="Documentary",Space Frontier
+http://demo.example.invalid:8080/demo/demo/1025
+#EXTINF:-1 tvg-id="test-pattern-hd" tvg-name="Test Pattern HD" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/test-pattern-hd.png" group-title="Documentary",Test Pattern HD
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+#EXTINF:-1 tvg-id="kitchen-table" tvg-name="Kitchen Table" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/kitchen-table.png" group-title="Lifestyle",Kitchen Table
+http://demo.example.invalid:8080/demo/demo/1027
+#EXTINF:-1 tvg-id="garden-hour" tvg-name="Garden Hour" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/garden-hour.png" group-title="Lifestyle",Garden Hour
+http://demo.example.invalid:8080/demo/demo/1028
+#EXTINF:-1 tvg-id="travel-notes" tvg-name="Travel Notes" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/travel-notes.png" group-title="Lifestyle",Travel Notes
+http://demo.example.invalid:8080/demo/demo/1029
+#EXTINF:-1 tvg-id="fit-studio" tvg-name="Fit Studio" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/fit-studio.png" group-title="Lifestyle",Fit Studio
+http://demo.example.invalid:8080/demo/demo/1030
+#EXTINF:-1 tvg-id="iron-harbor-2021" tvg-name="Iron Harbor (2021)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/iron-harbor-2021.png" group-title="Action",Iron Harbor (2021)
+http://demo.example.invalid:8080/movie/demo/demo/1031.mkv
+#EXTINF:-1 tvg-id="last-convoy-2019" tvg-name="Last Convoy (2019)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/last-convoy-2019.png" group-title="Action",Last Convoy (2019)
+http://demo.example.invalid:8080/movie/demo/demo/1032.mkv
+#EXTINF:-1 tvg-id="redline-run-2022" tvg-name="Redline Run (2022)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/redline-run-2022.png" group-title="Action",Redline Run (2022)
+http://demo.example.invalid:8080/movie/demo/demo/1033.mkv
+#EXTINF:-1 tvg-id="thunder-ridge-2020" tvg-name="Thunder Ridge (2020)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/thunder-ridge-2020.png" group-title="Action",Thunder Ridge (2020)
+http://demo.example.invalid:8080/movie/demo/demo/1034.mkv
+#EXTINF:-1 tvg-id="the-lantern-keeper-2019" tvg-name="The Lantern Keeper (2019)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/the-lantern-keeper-2019.png" group-title="Drama",The Lantern Keeper (2019)
+http://demo.example.invalid:8080/movie/demo/demo/1035.mkv
+#EXTINF:-1 tvg-id="quiet-rooms-2021" tvg-name="Quiet Rooms (2021)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/quiet-rooms-2021.png" group-title="Drama",Quiet Rooms (2021)
+http://demo.example.invalid:8080/movie/demo/demo/1036.mkv
+#EXTINF:-1 tvg-id="paper-boats-2018" tvg-name="Paper Boats (2018)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/paper-boats-2018.png" group-title="Drama",Paper Boats (2018)
+http://demo.example.invalid:8080/movie/demo/demo/1037.mkv
+#EXTINF:-1 tvg-id="salt-and-stone-2022" tvg-name="Salt and Stone (2022)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/salt-and-stone-2022.png" group-title="Drama",Salt and Stone (2022)
+http://demo.example.invalid:8080/movie/demo/demo/1038.mkv
+#EXTINF:-1 tvg-id="orbit-nine-2023" tvg-name="Orbit Nine (2023)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/orbit-nine-2023.png" group-title="Sci-Fi",Orbit Nine (2023)
+http://demo.example.invalid:8080/movie/demo/demo/1039.mkv
+#EXTINF:-1 tvg-id="static-sky-2020" tvg-name="Static Sky (2020)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/static-sky-2020.png" group-title="Sci-Fi",Static Sky (2020)
+http://demo.example.invalid:8080/movie/demo/demo/1040.mkv
+#EXTINF:-1 tvg-id="glass-planet-2021" tvg-name="Glass Planet (2021)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/glass-planet-2021.png" group-title="Sci-Fi",Glass Planet (2021)
+http://demo.example.invalid:8080/movie/demo/demo/1041.mkv
+#EXTINF:-1 tvg-id="echo-station-2022" tvg-name="Echo Station (2022)" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/echo-station-2022.png" group-title="Sci-Fi",Echo Station (2022)
+http://demo.example.invalid:8080/movie/demo/demo/1042.mkv
+#EXTINF:-1 tvg-id="fog-lane-s01-e01" tvg-name="Fog Lane S01 E01" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/fog-lane-s01-e01.png" group-title="Mystery Series",Fog Lane S01 E01
+http://demo.example.invalid:8080/series/demo/demo/1043.mkv
+#EXTINF:-1 tvg-id="fog-lane-s01-e02" tvg-name="Fog Lane S01 E02" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/fog-lane-s01-e02.png" group-title="Mystery Series",Fog Lane S01 E02
+http://demo.example.invalid:8080/series/demo/demo/1044.mkv
+#EXTINF:-1 tvg-id="fog-lane-s01-e03" tvg-name="Fog Lane S01 E03" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/fog-lane-s01-e03.png" group-title="Mystery Series",Fog Lane S01 E03
+http://demo.example.invalid:8080/series/demo/demo/1045.mkv
+#EXTINF:-1 tvg-id="fog-lane-s01-e04" tvg-name="Fog Lane S01 E04" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/fog-lane-s01-e04.png" group-title="Mystery Series",Fog Lane S01 E04
+http://demo.example.invalid:8080/series/demo/demo/1046.mkv
+#EXTINF:-1 tvg-id="office-plants-s01-e01" tvg-name="Office Plants S01 E01" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/office-plants-s01-e01.png" group-title="Comedy Series",Office Plants S01 E01
+http://demo.example.invalid:8080/series/demo/demo/1047.mkv
+#EXTINF:-1 tvg-id="office-plants-s01-e02" tvg-name="Office Plants S01 E02" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/office-plants-s01-e02.png" group-title="Comedy Series",Office Plants S01 E02
+http://demo.example.invalid:8080/series/demo/demo/1048.mkv
+#EXTINF:-1 tvg-id="office-plants-s01-e03" tvg-name="Office Plants S01 E03" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/office-plants-s01-e03.png" group-title="Comedy Series",Office Plants S01 E03
+http://demo.example.invalid:8080/series/demo/demo/1049.mkv
+#EXTINF:-1 tvg-id="office-plants-s01-e04" tvg-name="Office Plants S01 E04" tvg-logo="https://raw.githubusercontent.com/yusa1905/YPTV/main/docs/demo-logos/office-plants-s01-e04.png" group-title="Comedy Series",Office Plants S01 E04
+http://demo.example.invalid:8080/series/demo/demo/1050.mkv
